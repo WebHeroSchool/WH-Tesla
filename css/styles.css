@@ -1,0 +1,133 @@
+/* Fonts import */
+@import url('fonts.css');
+
+/* main styles */
+.wrapper {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.small-text {
+    font-size: 12px;
+    line-height: 15px;
+}
+/* header menu */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    padding: 24px 0 13px 0;
+}
+.model,
+.nav {
+    align-items: center;
+}
+.model__item, 
+.nav__item {
+    color: #000;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 18px;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 24px;
+}
+
+.model__item {
+    margin-right: 40px;
+    padding-bottom: 8px;
+}
+
+.nav__item {
+    margin-right: 30px;
+    padding-bottom: 8px;
+}
+
+.model__item:hover,
+.nav__item:hover {
+    color: #E51937;
+    border: 2px solid #E51937;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: groove;
+}
+
+.nav__item:last-child:hover {
+    border: transparent;
+    border-bottom-style: hidden;
+}
+
+/* promo section */
+.promo {
+    background: url('../img/Tesla-Wordmark-Red.png');
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.promo__details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.model-s {
+    font-size: 90px;
+    line-height: 110px;
+    text-align: center;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.model-s__slogan {
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    margin: 0 0 26px 0;
+}
+
+.model-s__image-big {
+    max-width: 968px;
+    max-height: 450px;
+    margin: 0 auto;
+}
+
+.model-s__item {
+    flex-direction: row;
+    justify-content: center;
+}
+.model-s__title {
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 43px;
+    margin: 0;
+    padding: 0;
+}
+
+.model-s__title_small {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.test {
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 16px;
+    text-transform: uppercase;
+}
+
+.promo__order {
+    border: 2px solid #E51937;
+    background: transparent;
+    color: #E51937;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 16px;
+    padding: 5px 25px;
+    text-transform: uppercase;
+    text-align: center;
+}
