@@ -13,73 +13,76 @@
 /* header menu */
 .header {
     display: flex;
+    flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
 }
 
 .logo {
-    padding: 24px 0 13px 0;
+    padding: 20px 0 13px 0;
 }
+
 .model,
-.nav {
+.shop{
     align-items: center;
 }
+
 .model__item, 
-.nav__item {
+.shop__item {
     color: #000;
     font-size: 15px;
     font-weight: 600;
     line-height: 18px;
+    padding-top: 24px;
+    padding-bottom: 8px;
     text-decoration: none;
     text-align: center;
-    padding-top: 24px;
 }
 
 .model__item {
     margin-right: 40px;
-    padding-bottom: 8px;
 }
 
-.nav__item {
+.shop__item {
     margin-right: 30px;
-    padding-bottom: 8px;
 }
 
 .model__item:hover,
-.nav__item:hover {
+.shop__item:hover {
     color: #E51937;
     border: 2px solid #E51937;
     border-top-style: hidden;
     border-right-style: hidden;
     border-left-style: hidden;
-    border-bottom-style: groove;
+    border-bottom-style: solid;
 }
 
-.nav__item:last-child:hover {
+.shop__item:last-child:hover {
     border: transparent;
     border-bottom-style: hidden;
 }
 
 /* promo section */
-.promo {
+.model-s {
     background: url('../img/Tesla-Wordmark-Red.png');
     background-repeat: no-repeat;
+}
+.model-s {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-content: center;
 }
 
-.promo__details {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-.model-s {
+
+.model-s__title {
     font-size: 90px;
     line-height: 110px;
     text-align: center;
     padding-bottom: 0;
     margin-bottom: 0;
+    padding-top: 0;
+    margin-top: 0;
 }
 
 .model-s__slogan {
@@ -94,12 +97,27 @@
     max-height: 450px;
     margin: 0 auto;
 }
-
-.model-s__item {
-    flex-direction: row;
+.tech-details {
+    display: flex;
+    flex-direction: row nowrap;
     justify-content: center;
+    align-items: center;
+    margin-bottom: 39px;
 }
-.model-s__title {
+
+.tech-details__item {
+    flex-direction: column;
+    align-content: center;
+    margin: 0 60px 0 0;
+}
+.tech-details__item:nth-child(4) {
+    padding-right: 80px;
+}
+.tech-details__image {
+    margin-right: 10px;
+}
+
+.tech-details__title {
     font-size: 35px;
     font-weight: 600;
     line-height: 43px;
@@ -107,10 +125,14 @@
     padding: 0;
 }
 
-.model-s__title_small {
+.tech-details__title_small {
     font-size: 20px;
     font-weight: 600;
     line-height: 24px;
+}
+
+.tech-details__text {
+    margin: 0;
 }
 
 .test {
@@ -127,7 +149,29 @@
     font-size: 13px;
     font-weight: bold;
     line-height: 16px;
-    padding: 5px 25px;
+    padding: 7px 30px;
     text-transform: uppercase;
     text-align: center;
+}
+
+.promo__footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.btn-down {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    margin: 0 auto 50px auto;
+}
+
+.bottom-line {
+        border: 1px solid #E51937;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: solid;
+    width: 100%;
 }
