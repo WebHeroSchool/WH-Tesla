@@ -1,7 +1,9 @@
 /* Fonts import */
+
 @import url('fonts.css');
 
 /* main styles */
+
 .wrapper {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
@@ -11,7 +13,10 @@
     font-size: 12px;
     line-height: 15px;
 }
+
+
 /* header menu */
+
 .header {
     display: flex;
     flex-flow: row nowrap;
@@ -20,21 +25,21 @@
 }
 
 .logo {
-    padding: 20px 0 13px 0;
+    padding: 24px 20px 13px 43px;
 }
 
 .model,
-.shop{
+.shop {
     align-items: center;
 }
 
-.model__item, 
+.model__item,
 .shop__item {
     color: #000;
     font-size: 15px;
     font-weight: 600;
     line-height: 18px;
-    padding-top: 24px;
+    padding-top: 30px;
     padding-bottom: 8px;
     text-decoration: none;
     text-align: center;
@@ -63,7 +68,9 @@
     border-bottom-style: hidden;
 }
 
+
 /* promo section */
+
 .model-s {
     background: url('../img/Tesla-Wordmark-Red.png');
     background-repeat: no-repeat;
@@ -137,12 +144,17 @@
 }
 
 .test {
+    color: #000;
     font-size: 13px;
     font-weight: bold;
     line-height: 16px;
+    text-decoration: none;
     text-transform: uppercase;
 }
+
+
 /* promo section button */
+
 .promo__order {
     border: 2px solid #E51937;
     background: transparent;
@@ -150,9 +162,14 @@
     font-size: 13px;
     font-weight: bold;
     line-height: 16px;
-    padding: 7px 30px;
+    padding: 7px 40px;
     text-transform: uppercase;
     text-align: center;
+}
+
+.promo__order:hover {
+    color: #fff;
+    background: #E51937;
 }
 
 .promo__footer {
@@ -169,7 +186,7 @@
 }
 
 .bottom-line {
-        border: 1px solid #E51937;
+    border: 1px solid #E51937;
     border-top-style: hidden;
     border-right-style: hidden;
     border-left-style: hidden;
@@ -177,7 +194,9 @@
     width: 100%;
 }
 
+
 /* Specs section */
+
 .specs {
     background: url('../img/tesla-inside.jpg');
     background-repeat: no-repeat;
@@ -202,6 +221,7 @@
     justify-content: flex-end;
     width: 440px;
 }
+
 .promo-title {
     font-size: 30px;
     font-weight: 600;
@@ -217,6 +237,7 @@
 .specs__desc {
     padding: 0 50px 10px 50px;
 }
+
 .btn-order {
     border: 2px solid #FFF;
     background: transparent;
@@ -228,15 +249,19 @@
     text-transform: uppercase;
     text-align: center;
 }
+
 .specs__promo-title {
     padding: 20px 0 10px 50px;
 }
+
 .specs__image {
     margin: 0 10px 0 32px;
 }
+
 .img-info {
     margin: 0 10px;
 }
+
 .specs__text {
     flex-direction: column;
     align-items: center;
@@ -244,6 +269,7 @@
     width: 60%;
     margin-bottom: 10px;
 }
+
 .title {
     padding: 0;
     margin: 0;
@@ -254,6 +280,7 @@
     font-weight: 600;
     line-height: 43px;
 }
+
 .specs__item,
 .specs__footer {
     display: flex;
