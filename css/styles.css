@@ -1,0 +1,294 @@
+/* Fonts import */
+
+@import url('fonts.css');
+
+/* main styles */
+
+.wrapper {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+.small-text {
+    font-size: 12px;
+    line-height: 15px;
+}
+
+
+/* header menu */
+
+.header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    padding: 24px 20px 13px 43px;
+}
+
+.model,
+.shop {
+    align-items: center;
+}
+
+.model__item,
+.shop__item {
+    color: #000;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 18px;
+    padding-top: 30px;
+    padding-bottom: 8px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.model__item {
+    margin-right: 40px;
+}
+
+.shop__item {
+    margin-right: 30px;
+}
+
+.model__item:hover,
+.shop__item:hover {
+    color: #E51937;
+    border: 2px solid #E51937;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: solid;
+}
+
+.shop__item:last-child:hover {
+    border: transparent;
+    border-bottom-style: hidden;
+}
+
+
+/* promo section */
+
+.model-s {
+    background: url('../img/Tesla-Wordmark-Red.png');
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.model-s__title {
+    font-size: 90px;
+    line-height: 110px;
+    text-align: center;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.model-s__slogan {
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    margin: 0 0 26px 0;
+}
+
+.model-s__image-big {
+    max-width: 968px;
+    max-height: 450px;
+    margin: 0 auto;
+}
+
+.tech-details {
+    display: flex;
+    flex-direction: row nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 39px;
+}
+
+.tech-details__item {
+    flex-direction: column;
+    align-content: center;
+    margin: 0 60px 0 0;
+}
+
+.tech-details__item:nth-child(4) {
+    padding-right: 80px;
+}
+
+.tech-details__image {
+    margin-right: 10px;
+}
+
+.tech-details__title {
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 43px;
+    margin: 0;
+    padding: 0;
+}
+
+.tech-details__title_small {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.tech-details__text {
+    margin: 0;
+}
+
+.test {
+    color: #000;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+
+/* promo section button */
+
+.promo__order {
+    border: 2px solid #E51937;
+    background: transparent;
+    color: #E51937;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 16px;
+    padding: 7px 40px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.promo__order:hover {
+    color: #fff;
+    background: #E51937;
+}
+
+.promo__footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.btn-down {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    margin: 0 auto 50px auto;
+}
+
+.bottom-line {
+    border: 1px solid #E51937;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: solid;
+    width: 100%;
+}
+
+
+/* Specs section */
+
+.specs {
+    background: url('../img/tesla-inside.jpg');
+    background-repeat: no-repeat;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.specs__title {
+    color: #E51937;
+    font-size: 70px;
+    font-weight: 600;
+    line-height: 85px;
+    padding-left: 60px;
+}
+
+.specs__content {
+    background: #e51937;
+    color: #fff;
+    flex-direction: column;
+    align-content: flex-start;
+    justify-content: flex-end;
+    width: 440px;
+}
+
+.promo-title {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 37px;
+}
+
+.text {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 18px;
+}
+
+.specs__desc {
+    padding: 0 50px 10px 50px;
+}
+
+.btn-order {
+    border: 2px solid #FFF;
+    background: transparent;
+    color: #FFF;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 16px;
+    padding: 0 30px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.specs__promo-title {
+    padding: 20px 0 10px 50px;
+}
+
+.specs__image {
+    margin: 0 10px 0 32px;
+}
+
+.img-info {
+    margin: 0 10px;
+}
+
+.specs__text {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    width: 60%;
+    margin-bottom: 10px;
+}
+
+.title {
+    padding: 0;
+    margin: 0;
+}
+
+.title__span {
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 43px;
+}
+
+.specs__item,
+.specs__footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.text-info {
+    padding-right: 25px;
+}
