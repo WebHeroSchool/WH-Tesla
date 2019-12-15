@@ -12,6 +12,7 @@
 .small-text {
     font-size: 12px;
     line-height: 15px;
+    margin: 0;
 }
 
 
@@ -245,9 +246,15 @@
     font-size: 13px;
     font-weight: bold;
     line-height: 16px;
-    padding: 0 30px;
+    padding: 7px 40px;
     text-transform: uppercase;
     text-align: center;
+}
+
+.btn-order:hover {
+    color: #E51937;
+    background: #fff;
+    border: 2px solid #fff;
 }
 
 .specs__promo-title {
@@ -255,7 +262,8 @@
 }
 
 .specs__image {
-    margin: 0 10px 0 32px;
+    align-self: center;
+    margin: 0 20px 0 32px;
 }
 
 .img-info {
@@ -281,14 +289,101 @@
     line-height: 43px;
 }
 
+.specs__item {
+    width: 70%;
+}
+
 .specs__item,
 .specs__footer {
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: center;
     margin-bottom: 30px;
 }
 
 .text-info {
+    color: #fff;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 16px;
     padding-right: 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+
+/* security section */
+
+.security {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.security__content {
+    background: #E51937;
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+    width: 440px;
+}
+
+.security__footer_bottom {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.security__ratings {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.ratings {
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.extra-small {
+    font-size: 10px;
+    line-height: 12px;
+    text-transform: uppercase;
+}
+
+.footer__title {
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 61px;
+    margin: 0;
+    padding: 0;
+    width: 50%;
+}
+
+.footer__title_small {
+    font-size: 25px;
+    line-height: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.security__scheme-image {
+    position: absolute;
+    top: 10%;
+    right: 0;
+    z-index: 10;
+}
+
+.rbc-item-bottom {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+
+.rbc-item-top {
+    position: absolute;
+    right: 20px;
+    bottom: 40px;
 }
