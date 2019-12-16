@@ -1,12 +1,13 @@
 /* Fonts import */
-
 @import url('fonts.css');
 
 /* main styles */
 
 .wrapper {
+    box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
     margin: 0;
+    max-width: 1440px;
 }
 
 .small-text {
@@ -26,12 +27,18 @@
 }
 
 .logo {
-    padding: 24px 20px 13px 43px;
+    padding: 24px 3.5% 0 43px;
+
 }
 
 .model,
 .shop {
     align-items: center;
+    padding-top: 16px;
+}
+
+.shop {
+    margin-right: 30px;
 }
 
 .model__item,
@@ -39,15 +46,23 @@
     color: #000;
     font-size: 15px;
     font-weight: 600;
-    line-height: 18px;
-    padding-top: 30px;
-    padding-bottom: 8px;
+    padding-bottom: 5px;
     text-decoration: none;
     text-align: center;
 }
 
+.model__item:visited,
+.shop__item:visited {
+    color: #000;
+    text-decoration: none;
+}
+
 .model__item {
-    margin-right: 40px;
+    margin-right: 25px;
+}
+
+.model__item:last-child {
+    margin-right: 30px;
 }
 
 .shop__item {
@@ -57,7 +72,7 @@
 .model__item:hover,
 .shop__item:hover {
     color: #E51937;
-    border: 2px solid #E51937;
+    border: 1px solid #E51937;
     border-top-style: hidden;
     border-right-style: hidden;
     border-left-style: hidden;
@@ -73,35 +88,42 @@
 /* promo section */
 
 .model-s {
-    background: url('../img/Tesla-Wordmark-Red.png');
-    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
+    position: relative;
+}
+
+.tesla {
+    position: absolute;
+    top: 10%;
+    z-index: -10;
+
 }
 
 .model-s__title {
     font-size: 90px;
-    line-height: 110px;
+    line-height: 95px;
     text-align: center;
     padding-bottom: 0;
     margin-bottom: 0;
     padding-top: 0;
-    margin-top: 0;
+    margin-top: 66px;
 }
 
 .model-s__slogan {
     font-size: 15px;
     line-height: 18px;
     text-align: center;
-    margin: 0 0 26px 0;
+    margin: 0 0 20px 0;
 }
 
 .model-s__image-big {
     max-width: 968px;
     max-height: 450px;
     margin: 0 auto;
+    padding: 1%;
 }
 
 .tech-details {
@@ -109,17 +131,26 @@
     flex-direction: row nowrap;
     justify-content: center;
     align-items: center;
-    margin-bottom: 39px;
+    margin-bottom: 2.3%;
 }
 
 .tech-details__item {
     flex-direction: column;
     align-content: center;
-    margin: 0 60px 0 0;
+    justify-content: center;
+    padding-right: 20px;
+}
+
+.tech-details__item:nth-child(2) {
+    padding-right: 30px;
+}
+
+.tech-details__item:nth-child(3) {
+    padding-left: 30px;
 }
 
 .tech-details__item:nth-child(4) {
-    padding-right: 80px;
+    padding-right: 10%;
 }
 
 .tech-details__image {
@@ -141,6 +172,7 @@
 }
 
 .tech-details__text {
+    grid-area: 'text';
     margin: 0;
 }
 
@@ -153,7 +185,6 @@
     text-transform: uppercase;
 }
 
-
 /* promo section button */
 
 .promo__order {
@@ -163,7 +194,8 @@
     font-size: 13px;
     font-weight: bold;
     line-height: 16px;
-    padding: 7px 40px;
+    margin-left: 7%;
+    padding: 8px 42px;
     text-transform: uppercase;
     text-align: center;
 }
@@ -183,7 +215,7 @@
     border: none;
     background: transparent;
     cursor: pointer;
-    margin: 0 auto 50px auto;
+    margin: 0 auto 30px auto;
 }
 
 .bottom-line {
@@ -199,19 +231,25 @@
 /* Specs section */
 
 .specs {
-    background: url('../img/tesla-inside.jpg');
-    background-repeat: no-repeat;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
+    position: relative;
+}
+
+.tesla-inside {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
 }
 
 .specs__title {
     color: #E51937;
     font-size: 70px;
     font-weight: 600;
-    line-height: 85px;
-    padding-left: 60px;
+    line-height: 92px;
+    padding-left: 5.5%;
 }
 
 .specs__content {
@@ -220,13 +258,13 @@
     flex-direction: column;
     align-content: flex-start;
     justify-content: flex-end;
-    width: 440px;
+    max-width: 440px;
+    max-height: 900px;
 }
 
 .promo-title {
     font-size: 30px;
     font-weight: 600;
-    line-height: 37px;
 }
 
 .text {
@@ -235,8 +273,15 @@
     line-height: 18px;
 }
 
+.specs__promo-title {
+    padding: 20px 0 0 50px;
+    margin-bottom: 10px;
+}
+
 .specs__desc {
     padding: 0 50px 10px 50px;
+    margin-top: 0;
+    padding-bottom: 11%;
 }
 
 .btn-order {
@@ -246,7 +291,7 @@
     font-size: 13px;
     font-weight: bold;
     line-height: 16px;
-    padding: 7px 40px;
+    padding: 8px 42px;
     text-transform: uppercase;
     text-align: center;
 }
@@ -255,10 +300,6 @@
     color: #E51937;
     background: #fff;
     border: 2px solid #fff;
-}
-
-.specs__promo-title {
-    padding: 20px 0 10px 50px;
 }
 
 .specs__image {
@@ -289,9 +330,7 @@
     line-height: 43px;
 }
 
-.specs__item {
-    width: 70%;
-}
+
 
 .specs__item,
 .specs__footer {
@@ -299,6 +338,15 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
+}
+
+.specs__item {
+    width: 70%;
+    margin-bottom: 35px;
+}
+
+.specs__footer {
+    padding: 25% 3% 10% 0;
     margin-bottom: 30px;
 }
 
@@ -307,7 +355,7 @@
     font-size: 13px;
     font-weight: bold;
     line-height: 16px;
-    padding-right: 25px;
+    padding-right: 34px;
     text-decoration: none;
     text-transform: uppercase;
 }
@@ -323,8 +371,18 @@
 
 .security_watermark {
     position: absolute;
-    top: 97px;
+    top: 140px;
     right: 0;
+    z-index: -10;
+}
+
+.security__promo-title {
+    margin: 11% auto 0;
+    padding-left: 12%;
+}
+
+.security__text {
+    padding: 0 12%;
 }
 
 .security__content {
@@ -332,25 +390,46 @@
     color: #FFF;
     display: flex;
     flex-direction: column;
-    width: 440px;
+    max-width: 440px;
 }
 
-.security__footer_bottom {
+.security__ratings-title {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 30px;
-}
-
-.security__ratings {
-    display: flex;
-    flex-flow: column wrap;
+    justify-content: flex-start;
+    font-size: 30px;
+    font-weight: 600;
+    margin: 45px auto 10px auto;
+    padding-left: 56px;
 }
 
 .ratings {
-    flex-direction: row;
-    justify-content: space-around;
+    display: grid;
+    grid-template-areas: 'l-cell r-cell'
+        'l-cell r-cell'
+        'l-cell r-cell'
+        'l-cell r-cell'
+        'l-cell r-cell';
+    margin: 0;
+}
+
+.ratings:last-child {
+    margin: 0 auto 15% auto;
+}
+
+.ratings__title {
+    grid-area: 'l-cell';
+    align-self: center;
+    justify-self: start;
+    text-transform: uppercase;
+    padding-left: 50px;
+    margin: 10px;
+}
+
+.five-stars {
+    grid-area: 'r-cell';
+    align-self: center;
+    justify-self: end;
+    padding-right: 35%;
 }
 
 .extra-small {
@@ -359,37 +438,63 @@
     text-transform: uppercase;
 }
 
+.security__footer_top {
+    display: grid;
+    grid-template-areas: 'l-cell r-cell'
+        'l-cell r-cell';
+    margin-bottom: 18px;
+}
+
+.security__footer_bottom {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 60px;
+    max-width: 95%;
+}
+
+.security__image {
+    grid-area: 'l-cell l-cell';
+    padding-left: 64px;
+    align-self: center;
+    justify-self: end;
+}
+
 .footer__title {
+    grid-area: 'r-cell';
+    align-self: end;
     font-size: 50px;
     font-weight: 600;
-    line-height: 61px;
-    margin: 0;
-    padding: 0;
-    width: 50%;
+    line-height: 30px;
+    padding-left: 10%;
 }
 
 .footer__title_small {
+    grid-area: r-cell;
     font-size: 25px;
-    line-height: 30px;
-    margin: 0;
-    padding: 0;
+    align-self: start;
+}
+
+.footer__title_small {
+    grid-area: r-cell;
 }
 
 .security__scheme-image {
     position: absolute;
-    top: 12%;
-    right: 3%;
+    top: 19.5%;
+    right: 3.2%;
     z-index: 10;
-}
-
-.rbc-item-bottom {
-    position: absolute;
-    right: 10px;
-    bottom: 10px;
 }
 
 .rbc-item-top {
     position: absolute;
     right: 20px;
     bottom: 40px;
+}
+
+.rbc-item-bottom {
+    position: absolute;
+    right: 15px;
+    bottom: 10px;
 }
